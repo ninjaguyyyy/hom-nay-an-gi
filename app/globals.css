@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-[#f6f3e8] text-slate-900 antialiased;
+  background-image:
+    radial-gradient(circle at 16% 4%, rgba(194, 220, 98, 0.28) 0, transparent 34%),
+    radial-gradient(circle at 94% 0%, rgba(241, 178, 89, 0.18) 0, transparent 26%),
+    linear-gradient(180deg, #fcfbf7 0%, #f7f4ea 50%, #f4f1e8 100%);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(8px);
+}
+
+@keyframes tray-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(1deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes tray-float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-4px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-tray-spin {
+  animation: tray-spin 11s ease-in-out infinite;
+}
+
+.animate-tray-float {
+  animation: tray-float 3.6s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-tray-spin,
+  .animate-tray-float {
+    animation: none;
+  }
+}

@@ -1,0 +1,14 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" rx="64" fill="#F8FAFC"/>
+  <circle cx="256" cy="214" r="168" fill="white" stroke="#9ACA4F" stroke-width="12"/>
+  <path d="M145 256C145 213.5 179.5 179 222 179H290C332.5 179 367 213.5 367 256V286C367 324.66 335.66 356 297 356H215C176.34 356 145 324.66 145 286V256Z" fill="#F9D65A"/>
+  <path d="M145 256C145 213.5 179.5 179 222 179H290C332.5 179 367 213.5 367 256V286C367 324.66 335.66 356 297 356H215C176.34 356 145 324.66 145 286V256Z" stroke="#2D5A88" stroke-width="10"/>
+  <path d="M255 136C293 136 312 161 312 188C312 213 294 228 272 228C255 228 242 239 242 255V266" stroke="#2D5A88" stroke-width="14" stroke-linecap="round"/>
+  <path d="M254 130C278 130 295 144 300 162C305 180 297 198 279 208C265 216 256 226 256 243V258" stroke="#F6CD4A" stroke-width="18" stroke-linecap="round"/>
+  <path d="M214 224V271" stroke="#2D5A88" stroke-width="11" stroke-linecap="round"/>
+  <path d="M226 224V273" stroke="#2D5A88" stroke-width="9" stroke-linecap="round"/>
+  <path d="M238 224V273" stroke="#2D5A88" stroke-width="7" stroke-linecap="round"/>
+  <ellipse cx="291" cy="250" rx="18" ry="27" fill="#2D5A88"/>
+  <path d="M205 302C220 319 292 319 307 302" stroke="#2D5A88" stroke-width="8" stroke-linecap="round"/>
+  <text x="256" y="465" text-anchor="middle" fill="#1F3D69" font-family="'Be Vietnam Pro', Arial, sans-serif" font-size="72" font-weight="800">Ăn Gì?</text>
+</svg>

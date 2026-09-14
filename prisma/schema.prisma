@@ -1,0 +1,32 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model User {
+  id              String            @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  name            String?
+  email           String?           @unique
+  emailVerified   DateTime?         @map("emailVerified") @db.Timestamptz(6)
+  image           String?
+  phoneCredential PhoneCredential?
+
+  @@map("users")
+}
+
+model PhoneCredential {
+  userId       String   @id @map("user_id") @db.Uuid
+  phone        String   @unique
+  passwordHash String   @map("password_hash")
+  createdAt    DateTime @default(now()) @map("created_at") @db.Timestamptz(6)
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([phone], map: "idx_phone_credentials_phone")
+  @@map("phone_credentials")
+}
